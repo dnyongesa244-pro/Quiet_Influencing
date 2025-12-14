@@ -23,5 +23,15 @@ export YOUTUBE_API_KEY="your_key_here"
 export TWITTER_BEARER_TOKEN="your_token_here"
 
 
+#create and activate virtual enviroment
+conda create -n socialenv python=3.10
+conda activate socialenv
+
+
+
 # testiing youtube api replace keyword with brand name
 python youtube_collector.py keyword --max-comments 5 --max-videos 1 --verbose
+
+# sentiemt analysis
+
+python youtube_sentiment_analysis.py
