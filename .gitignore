@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environments
+tiktokenv/
+venv/
+env/
+
+# Generated data
+collected_data/
+data/
+
+# Experiments
+tiktok_api_test.py
