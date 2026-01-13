@@ -35,3 +35,4 @@ python youtube_collector.py keyword --max-comments 5 --max-videos 1 --verbose
 # sentiemt analysis
 
 python youtube_sentiment_analysis.py
+python youtube_network_analysis.py
