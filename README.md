@@ -1,38 +1,43 @@
-# Social Media Collector
+Social Media Collector & Consumer Behavior Suite
+A modular Python toolkit for high-volume data collection from YouTube and x to analyze digital influence and consumer trends.
 
-A modular Python tool for collecting comments and tweets from YouTube and Twitter.
+🚀 Key Features
+Multi-Platform: Specialized modules for YouTube (API v3) and Twitter (snscrape/Tweepy).
 
-## Features
-- **YouTube**: Collect comments from videos matching a hashtag
-- **Twitter**: Collect tweets using snscrape (free) or Tweepy API
-- **Modular**: Each platform in separate files for easy debugging
-- **Configurable**: Command-line options for fine-grained control
+Analytical Layers: Integrated scripts for Sentiment Analysis and Network Analysis to map consumer behavior.
 
-## Installation
+Operations-Ready: Fully configurable via CLI with verbose logging for debugging data pipelines.
 
-```bash
-# Clone or create project directory
-mkdir social-media-collector
-cd social-media-collector
+🛠️ Installation & Setup
+Environment Setup (Recommended)
 
-# Install dependencies
-pip install -r requirements.txt
-
-# Set up API keys (optional)
-export YOUTUBE_API_KEY="your_key_here"
-export TWITTER_BEARER_TOKEN="your_token_here"
-
-
-#create and activate virtual enviroment
+Bash
 conda create -n socialenv python=3.10
 conda activate socialenv
+Clone & Install
 
+Bash
+git clone https://github.com/dnyongesa244-pro/Quiet_Influencing.git
+cd social-media-collector
+pip install -r requirements.txt
+Configuration
+Set your environment variables for seamless API access:
 
+Bash
+export YOUTUBE_API_KEY="your_key_here"
+export TWITTER_BEARER_TOKEN="your_token_here"
+📊 Usage
+Data Collection
+To test the YouTube collector for a specific brand or keyword:
 
-# testiing youtube api replace keyword with brand name
-python youtube_collector.py keyword --max-comments 5 --max-videos 1 --verbose
+Bash
+python youtube_collector.py "BrandName" --max-comments 5 --max-videos 1 --verbose
+Behavioral Analysis
+Once data is collected, run the analysis pipeline:
 
-# sentiemt analysis
-
+Bash
+# Analyze consumer sentiment
 python youtube_sentiment_analysis.py
+
+# Map influencer networks
 python youtube_network_analysis.py
