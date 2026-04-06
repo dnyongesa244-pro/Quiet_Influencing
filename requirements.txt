@@ -7,3 +7,25 @@ python-dotenv>=1.0.0
 # Twitter dependencies (commented out for now)
 # tweepy>=4.0.0
 # snscrape>=0.6.0
+
+# Data Collection
+google-api-python-client
+tweepy
+snscrape
+
+# Data Processing & Math
+pandas
+numpy
+
+# Visualization & Analysis
+matplotlib
+seaborn
+scipy
+
+# Natural Language Processing (for Sentiment Analysis)
+textblob
+vaderSentiment
+nltk
+
+# Network Analysis
+networkx
